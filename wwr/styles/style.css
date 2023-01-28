@@ -1,3 +1,8 @@
+div {
+    max-width: 1600px;
+    width: 0 auto;
+    margin: 0 auto;
+}
 #content {
     max-width: 1600px;
     width: 0 auto;
@@ -26,7 +31,7 @@ nav a {
 .button-box {
     text-align: center;
 }
-main selection {
+main section {
     text-align: center;
 }
 #background {
@@ -46,7 +51,7 @@ nav a {
     color: white;
 }
 nav a:hover {
-    background-color: black;
+    background-color: #4357AD;
     color: #D81159;
 }
 .home-title {
