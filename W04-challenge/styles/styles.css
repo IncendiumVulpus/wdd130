@@ -1,0 +1,23 @@
+main p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: pink;
+    vertical-align: middle;
+    color: white;
+}
+#active {
+    background-color: pink;
+    color: pink;
+}
+img {
+    vertical-align: center;
+}
+h1 {
+    text-align: center;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
