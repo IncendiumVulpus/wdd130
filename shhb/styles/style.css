@@ -101,7 +101,7 @@ nav a:hover {
 }
 .home-grid {
     display: grid;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 20% 20% 20% 40%;
 }
 .sg-fort1-img {
@@ -111,27 +111,27 @@ nav a:hover {
 }
 .intro-msg {
     margin: 200px 0;
-    grid-column: 3/4;
+    grid-column: span 3 / 5;
     grid-row: 1;
 }
 .paintguns-msg {
     margin: 200px 0;
-    grid-column: 2/3;
+    grid-column: span 2 / 4;
     grid-row: 2;
 }
 .dec2022-camp-img {
     margin: 200px 0;
-    grid-column: 4;
+    grid-column: 5;
     grid-row: 2;
 }
 .paintball-marker {
     margin: 200px 0;
-    grid-column: 2/4;
+    grid-column: span 2 / 5;
     grid-row: 3;
 }
 .paintguns-msg {
     margin: 200px 0;
-    grid-column: 2/4;
+    grid-column: span 2 / 5;
     grid-row: 4;
 }
 @media screen and (max-width: 900px) {
