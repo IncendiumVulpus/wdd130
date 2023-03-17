@@ -1,42 +1,172 @@
-/* CSS styles for header */
-header {
-    background-color: #023b22;
+#background {
+    height: 725px;
+    background-color:#929982;
+    color: #023B22;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+body {
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    background-color: RoyalBlue; 
     color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-header img {
-    height: 0 auto;
-    width: 0 auto;
-    margin-right: 10px;
-}
-header ul {
-    list-style: none;
+#content {
+    max-width: 1600px;
+    width: auto;
     margin: 0 auto;
-    padding: 0 auto;
-    display: flex;
 }
-header li {
-    margin-right: 20px;
+div {
+    max-width: 1600px;
+    width: auto;
+    margin: 0 auto;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #929982;
+    color: #023B22;
+    padding: 25px 50px;
+    margin-top: 200px
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: RoyalBlue
+}
+footer p {
+    font-size: 1.2em;
+}    
+footer p a:hover {
+    text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+header {
+    font-family: "Garamond";
+    background-color:#023B22;
+    color: white;
+}
+.home-title {
+    font-family: "Garamond";
+    font-size: 2em;
+    color: black;
+    margin-top: 10px;
+}
+h2 {
+    margin: 0;
+}
+.sg-fort1-img, .dec2022-camp-img, .paintball-marker-img {
+    width: 80px;
+    padding-top: 10px;
+}
+.logo {
+    width: 80px;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+main section {
+    text-align: center;
+}
+main section img {
+    box-sizing: border-box;
 }
 nav {
     display: flex;
     justify-content: space-around;
-    font-family: Lato, bold;
+    font-family: Garamond, bold;
 }
 nav a {
-    text-align: left;
+    text-align: center;
     color: RoyalBlue;
     text-decoration: none;
     padding: 35px;
 }
 nav a:hover {
-    background-color: #023B22;
+    background-color: #396E94;
     color: white;
 }
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 20% 20% 20% 40%;
+}
 .sg-fort1-img {
-    height: 200px;
-    margin-right: 50px;
+    margin: 200px 0;
+    grid-column: 2;
+    grid-row: 1;
+}
+.intro-msg {
+    margin: 200px 0;
+    grid-column: 3/4;
+    grid-row: 1;
+}
+.paintguns-msg {
+    margin: 200px 0;
+    grid-column: 2/3;
+    grid-row: 2;
+}
+.dec2022-camp-img {
+    margin: 200px 0;
+    grid-column: 4;
+    grid-row: 2;
+}
+.paintball-marker {
+    margin: 200px 0;
+    grid-column: 2/4;
+    grid-row: 3;
+}
+.paintguns-msg {
+    margin: 200px 0;
+    grid-column: 2/4;
+    grid-row: 4;
+}
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .sg-fort1, .paintball-marker, .dec2022-camp { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
