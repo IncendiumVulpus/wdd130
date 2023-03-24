@@ -85,6 +85,18 @@ header {
     height: 300px;
     background-color: #929982
 }
+.sg_fort1.jpg {
+    max-width: auto;
+    height: 350px;
+}
+.sg-group-img {
+    max-width: auto;
+    height: 350px;
+}
+.winners-img {
+    max-width: auto;
+    height: 350px;
+}
 .dec2022-camp-img {
     max-width: auto;
     height: 350px;
@@ -126,19 +138,20 @@ header {
     text-align: center;
     padding: 20px;
 }
-  
 .paintball-marker-img {
     max-width: 100%;
 }
-  
 #paintball-marker-msg {
     padding: 20px;
 }
-  
 #paintguns-msg {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     padding: 20px;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
