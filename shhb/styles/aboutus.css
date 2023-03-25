@@ -37,7 +37,6 @@ nav > ul > li > a {
     line-height: 2em;
     padding: 0.5em 1em;
     text-decoration: underline;
-
 }
 nav a:hover {
     background-color: #396E94;
@@ -53,12 +52,10 @@ nav a:hover {
    overflow: hidden;
 }
 footer {
-    grid-row: 5;
-    grid-column: 1 / 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #929982;
+    background-color: #023B22;
     color: #023B22;
     text-align: center;
     padding: 20px;
@@ -76,24 +73,30 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }
-.home-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-row-gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+/* center the group image */
+.sg-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
-.sg-fort1-img {
-    max-width: auto;
-    height: 300px;
-    background-color: #929982
-}
-.sg_fort1.jpg {
-    max-width: auto;
-    height: 350px;
-}
+  
+  /* center the winners image */
+  .winners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* center the title and paragraph text */
+  #intro-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 .sg-group-img {
     max-width: auto;
     height: 350px;
@@ -102,25 +105,19 @@ footer p a:hover {
     max-width: auto;
     height: 350px;
 }
-.dec2022-camp-img {
-    max-width: auto;
-    height: 350px;
-}
-.paintball-marker-img {
-    max-width: auto;
-    height: 400px;
-}
-.sg-fort1, .dec2022-camp, .paintball-marker {
+.sg-group-img, .winners-img {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-items: center;
 }
 #intro-msg, #paintguns-msg, #paintball-marker-msg {
     padding: 20px;
     background-color: royalblue;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    justify-items: center;
 }
-.sg-fort1 {
+.sg-group-img {
     grid-column: 1;
     grid-row: 1;
 }
@@ -128,34 +125,6 @@ footer p a:hover {
     grid-column: 2;
     grid-row: 1;
 }
-#paintguns-msg {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    padding: 20px;
-}
-.dec2022-camp-img {
-    grid-column: 2;
-    grid-row: 2;
-}
-.paintball-marker {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
-    text-align: center;
-    padding: 20px;
-}
-.paintball-marker-img {
-    max-width: 100%;
-}
-#paintball-marker-msg {
-    padding: 20px;
-}
-#paintguns-msg {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    padding: 20px;
-}
-
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}

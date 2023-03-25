@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/aboutus.css">
+    <link rel="icon" type="image/png" href="images/shhb_logo.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Hill Honey Badgers</title>
 </head>
 <body>
-	<header>
-        <a id="logo_link" href="index.html"></a>
-		    <img class="logo" src="images/shhb_logo.png" alt="South Hill Honey Badgers Logo">
-		<nav>
+    <div class="bg-div">
+        <img class="logo-img" src="images/shhb_logo.png" alt="South Hill Honey Badgers Logo" width="200px" height="auto" ALT="align box" ALIGN=CENTER>
+        <nav>
+            <ul>
                 <li><a href="index.html">Home</a></li>
-				<li><a href="upcomingevents.html">Upcoming Events</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-		</nav>
-	</header>
-	<main class="home-grid2">
+                <li><a href="upcomingevents.html">Upcoming Events</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+	<main class="home-grid">
 		<div id="intro-msg">
             <section class="sg-group">
                 <img class="sg-group-img" src="images/sg_group.JPG" alt="Smiling paintball team">
             </section>
             <h1 class="home-title">About Us</h1>
-            <p>We are a group of friends who have been playing together for 15 years. We started out as a few fathers with their kids once a month, playing paintball together in the woods.
-                We now regularly have groups of 20+ each month when we gather to play. We have 32 variant games that we play and on occasion we design our own scenario games.</p>
-                <p>Are you interested in playing with us?</p>
-                <p>If so, please reach out to us by email at: whaley004@gmail.com</p>
+            <p>We are a group of friends who have been playing together for 15 years.</p>
+            <p>We started out as a few fathers with their kids once a month, playing paintball together in the woods.</p>
+            <p>We now regularly have groups of 20+ each month when we gather to play. We have 32 variant games that we play and on occasion we design our own scenario games.</p>
+            <p>Are you interested in playing with us?</p>
+            <p>If so, please reach out to us by email at: whaley004@gmail.com</p>
         <section class="winners">
             <img class="winners-img" src="images/winners.jpg" alt="Four paintball players holding the winning flag">
+        </section>
+        </div>
+    </main>
     <style>
     * {box-sizing: border-box}
     body {font-family: Verdana, sans-serif; margin:0}
@@ -101,7 +107,6 @@
     display: inline-block;
     transition: background-color 0.6s ease;
     }
-
     .active, .dot:hover {
     background-color: black;
     }
@@ -111,12 +116,10 @@
     animation-name: fade;
     animation-duration: 1.5s;
     }
-
     @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
     }
-
     /* On smaller screens, decrease text size */
     @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
@@ -164,12 +167,10 @@
     function plusSlides(n) {
     showSlides(slideIndex += n);
     }
-
     // Thumbnail image controls
     function currentSlide(n) {
     showSlides(slideIndex = n);
     }
-
     function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
@@ -187,7 +188,7 @@
     }
     </script>
     <footer>
-		<p>South Hill Honey Badgers&copy; 2023 Woodsball Paintball Team</p>
+		<p>South Hill Honey Badgers&copy;  2023 Woodsball Paintball Team</p>
         <p><a href="site-plan.html">Site Plan</a></p>
         <p><a href="contactus.html">Contact Us</a></p>
         <div class="social">
