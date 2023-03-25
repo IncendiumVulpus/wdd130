@@ -79,6 +79,7 @@ footer p a:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
+    border: 20px #023B22
   }
   
   /* center the winners image */
@@ -96,6 +97,9 @@ footer p a:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+  img {
+    border: 6px solid  #023B22
   }
 .sg-group-img {
     max-width: auto;

@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+img {
+    border: 6px solid  #023B22
+}
 body {
     background-color:#929982;
     font-family: Lato, sans-serif;
