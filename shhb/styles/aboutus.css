@@ -5,6 +5,7 @@
 body {
     background-color:#929982;
     font-family: Lato, sans-serif;
+    text-align: center;
 }
 p {
     font-family: Lato;
@@ -98,9 +99,16 @@ footer p a:hover {
     align-items: center;
     height: 100%;
   }
-  img {
+.fs70 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 20px #023B22
+}
+img {
     border: 6px solid  #023B22
-  }
+}
 .sg-group-img {
     max-width: auto;
     height: 350px;
@@ -129,6 +137,7 @@ footer p a:hover {
     grid-column: 2;
     grid-row: 1;
 }
+
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
